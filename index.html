@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Brew & Bites</title>
+
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: Arial, sans-serif; background: #f4eee3; }
+
+    /* Header */
+    header {
+      background: url("https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=1600") center/cover no-repeat;
+      height: 300px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      text-align: center;
+      color: #fff;
+      padding: 20px;
+    }
+    header h1 { font-size: 42px; text-shadow: 2px 2px 5px #000; }
+    header p { font-size: 18px; text-shadow: 2px 2px 4px #000; }
+
+    /* Navigation */
+    nav { 
+      background: #6b4f36; 
+      display: flex; 
+      justify-content: center; 
+      position: sticky;
+      
+    }
+    nav a {
+      color: #fff;
+      padding: 15px 20px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+    nav a:hover { background: #8b6f47; }
+
+    main { padding: 20px; max-width: 1100px; margin: auto; }
+
+    h2 { color: #6b4f36; margin-bottom: 15px; }
+
+    /* Menu Cards */
+    .menu-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+    .card {
+      background: #fff;
+      padding: 15px;
+      border-radius: 12px;
+      box-shadow: 0px 4px 10px rgba(0,0,0,0.1);
+      transition: 0.3s;
+    }
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0px 6px 15px rgba(0,0,0,0.2);
+    }
+    .card img {
+      width: 100%;
+      height: 170px;
+      object-fit: cover;
+      border-radius: 10px;
+      margin-bottom: 10px;
+    }
+    .card strong { font-size: 18px; color: #5a3d27; }
+
+    .stars {
+      color: gold;
+      font-size: 18px;
+      margin: 5px 0;
+    }
+
+    /* About & Contact Box */
+    .box {
+      background: #fff;
+      padding: 20px;
+      border-left: 6px solid #6b4f36;
+      border-radius: 10px;
+      box-shadow: 0px 4px 10px rgba(0,0,0,0.1);
+      margin-bottom: 35px;
+    }
+
+    footer {
+      background: #6b4f36;
+
+      
+      color: white;
+      text-align: center;
+      padding: 15px;
+      margin-top: 40px;
+    }
+
+    html { scroll-behavior: smooth; }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Brew & Bites </h1>
+    <p>The perfect place to relax and sip your favorite coffee!</p>
+  </header>
+
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#menu">Menu</a>
+    <a href="#snacks">Snacks</a>
+    <a href="#desserts">Desserts</a>
+    <a href="#about">About Us</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <main>
+
+    <!-- HOME -->
+    <div id="home" class="box">
+      <h2>Home</h2>
+      <p>Enjoy freshly brewed coffee, delicious snacks, and sweet desserts every day!</p>
+    </div>
+
+    <!-- MENU: COFFEE -->
+    <div id="menu" class="section">
+      <h2>Coffee Menu</h2>
+
+      <div class="menu-container">
+
+        <div class="card">
+          <img src="Espresso Coffee.jpg">
+          <strong>Espresso</strong>
+          <div class="stars">★★★★★</div>
+          <p>Strong, bold, and full of flavor.</p>
+        </div>
+
+        <div class="card">
+          <img src="Cappuccino.jpg">
+          <strong>Cappuccino</strong>
+          <div class="stars">★★★★★</div>
+          <p>Creamy espresso with steamed milk.</p>
+        </div>
+
+        <div class="card">
+          <img src="cafe-latte.jpg">
+          <strong>Latte</strong>
+          <div class="stars">★★★★★</div>
+          <p>Smooth milk coffee topped with froth.</p>
+        </div>
+
+        <div class="card">
+          <img src="mochaaa.jpg">
+          <strong>Mocha</strong>
+          <div class="stars">★★★★★</div>
+          <p>Coffee blended with chocolate.</p>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- SNACKS -->
+    <div id="snacks" class="section">
+      <h2>Snacks</h2>
+
+      <div class="menu-container">
+
+        <div class="card">
+          <img src="gobi-manchurian-cauliflower-manchurian.jpg">
+          <strong>Gobi</strong>
+          <div class="stars">★★★★★</div>
+          <p>Crispy and spicy fried cauliflower.</p>
+        </div>
+
+        <div class="card">
+          <img src="samosa-recipe-.jpg">
+          <strong>Samosa</strong>
+          <div class="stars">★★★★★</div>
+          <p>Golden fried pockets stuffed with potato filling.</p>
+        </div>
+
+        <div class="card">
+          <img src="clubsandwich.jpg">
+          <strong>Sandwich</strong>
+          <div class="stars">★★★★★</div>
+          <p>Freshly made with veggies and cheese.</p>
+        </div>
+
+        <div class="card">
+          <img src="Homemade-French-Fries_8.jpg">
+          <strong>French Fries</strong>
+          <div class="stars">★★★★★</div>
+          <p>Hot and crispy potato fries.</p>
+        </div>
+
+        <div class="card">
+          <img src="steamed-momos-.jpg">
+          <strong>Momos</strong>
+          <div class="stars">★★★★</div>
+          <p>Steamed or fried dumplings.</p>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- DESSERTS -->
+    <div id="desserts" class="section">
+      <h2>Desserts</h2>
+
+      <div class="menu-container">
+
+        <div class="card">
+          <img src="Brownie-Recipe-with-Cocoa-Powder.jpg">
+          <strong>Brownie</strong>
+          <div class="stars">★★★★★</div>
+          <p>Warm chocolaty dessert.</p>
+        </div>
+
+        <div class="card">
+          <img src="Ice-cream-recipe-.jpg">
+          <strong>Ice Cream</strong>
+          <div class="stars">★★★★★</div>
+          <p>Available in multiple flavors.</p>
+        </div>
+
+        <div class="card">
+          <img src="Chocolate-Frosted-Donuts-.jpg">
+          <strong>Donut</strong>
+          <div class="stars">★★★★★</div>
+          <p>Soft, sweet, and frosted.</p>
+        </div>
+
+        <div class="card">
+          <img src="cupcake.jpg">
+          <strong>Cupcake</strong>
+          <div class="stars">★★★★★</div>
+          <p>Fluffy cake topped with cream.</p>
+        </div>
+        <div class="card">
+          <img src="cheesecake.jpg">
+          <strong>Cheesecake</strong>
+           <div class="stars">★★★★★</div>
+        </div>
+      </div>
+    </div>
+    <!-- ABOUT US -->
+    <div id="about" class="box">
+      <h2>About Us</h2>
+      <p>Welcome to Your Coffee Shop, your cozy neighborhood café! We are passionate about serving freshly brewed coffee, tasty snacks, and delicious desserts, all in a relaxing atmosphere. Whether you’re meeting friends, working, or just taking a break, our team is here to make you feel at home.</p>
+    </div>
+
+    <!-- CONTACT -->
+    <div id="contact" class="box">
+      <h2>Contact</h2>
+      <p><strong>Address:</strong> Near Thops tech carrier Solutions</p>
+      <p><strong>Phone:</strong> +91 98765 43210</p>
+      <p><strong>Email:</strong> hello@brew&bites.com</p>
+      <p><strong>Opening Hours:</strong> Monday - Sunday: 8 AM - 10 PM</p>
+    </div>
+    <footer>
+    &copy; 2025 Brew & Bites. All rights reserved.
+  </footer>
+  </main>
+</body></html>
